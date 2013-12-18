@@ -1,0 +1,163 @@
+\documentclass[12pt]{article}
+
+%\voffset=0.5in
+\topmargin=-0.5in
+%\footskip=0.0in
+\textheight=9.0in
+%\pagestyle{empty}		
+
+\begin{document}
+
+\begin{center}
+{\bf \large Spatial correlations in a \\ 
+turbulent MHD laboratory plasma \\
+ D. A. Schaffner, A. Wan, V. S. Lukin, M. R. Brown \\
+Swarthmore College \\
+Adrian's APS paper}
+\end{center}
+
+{\bf Abstract:} Correlation analysis is used to determine the Taylor microscale and magnetic Reynold's number in a turbulent laboratory MHD plasma.  We find that radial correlation length is shorter for a colliding MHD wind tunnel plasma than for a single plume.  An unambiguous measure of the magnetic Reynolds number is estimated from the Taylor microscale and the correlation scale, then compared to a calculation using the Spitzer resisitivity.
+
+\bigskip {\bf Introduction} A useful measure of fully developed turbulence is the spatial correlation function.  For a magnetohydrodynamic (MHD) plasma, the magnetic correlation function can be written
+
+$$R(r) =  \langle {\bf b(x) \cdot b(x + r)} \rangle$$ where {\bf b} is the fluctuating part of a turbulent magnetic field (${\bf B}(x, t) = {\bf B_0 + b}$).  For well-behaved turbulence, the magnetic fluctuations at two points should become uncorrelated at large spatial separation and the correlation function should vanish ($R \rightarrow 0$ as $r \rightarrow \infty$).  
+
+Two point velocity correlation functions have been measured in conventional fluids for decades (see, for example \cite{Belmabrouk98}) but two point magnetic correlations in plasmas are less common.  The first proper two-point single time measurements of the magnetic correlation function in the solar wind plasma were performed by Matthaeus, et al \cite{Matthaeus05}.  They used simultaneous magnetic field data from several spacecraft, including the four Cluster spacecraft flying in tetrahedral formation.  Simultaneous measurements were performed with separations as small as 150 km (using pairs of Cluster satellites) to as large as $350~R_E$ ($2.2 \times 10^6~km$).  From measurements of the outer correlation scale, and the Taylor microscale (discussed below), they report an effective magnetic Reynolds number of solar wind $R_m^{eff}  = 230,000$.
+
+In a set of follow-up papers, Weygand, et al \cite{Weygand07,Weygand09,Weygand10,Weygand11} have modified and improved the earlier result.  In particular, they describe a method using fits of Cluster separations from 100 to $10^6~km$ \cite{Weygand07}, and extrapolating the Taylor microscale down to zero separation.  We discuss this method below.  These more detailed measurements confirm the earlier work  \cite{Matthaeus05} and find a solar wind magnetic Reynolds number of $R_m^{eff}  = 260,000 \pm 20,000$.  In addition, using data in the magnetospheric plasma sheet (tailward of Earth), they find a much smaller Reynolds number $R_m^{eff}  = 111 \pm 12$ since the outer correlation scale is much smaller in the plasma sheet.  Anisotropies in the correlation function parallel and perpendicular to the local magnetic field were studied in separate papers \cite{Weygand09,Weygand10}, with longer correlation lengths measured parallel to the local field.  Variations with solar wind speed were also studied \cite{Weygand11}.
+
+\bigskip {\bf Theoretical background and techniques} As noted above, the magnetic correlation function can be written
+
+$$R(r) =  \langle {\bf b(x) \cdot b(x + r)} \rangle$$ where {\bf b} is the fluctuating part of a turbulent magnetic field (${\bf B}(x, t) = {\bf B_0 + b}$)). 
+
+The magnetic Taylor microscale can be formally defined as
+
+$$\lambda_T^2 = \frac{\langle b^2 \rangle}{\langle (\nabla \times b)^2 \rangle}. $$ This definition identifies the Taylor microscale as the scale associated with mean square spatial derivatives of the fluctuating magnetic field $b$.  It is at this scale that one would expect dissipation effects to become important, although actual dissipation likely occurs at smaller, kinetic scales ($k_D \lambda_T = R_m^{1/4}$) \cite{Matthaeus08}.  We expect that the Taylor microscale should be on the same order but larger than the Larmor scale ($\rho_i \approx 1~mm$ in the SSX wind tunnel) or the ion inertial scale ($c/\omega_{pi} \approx 5~mm$ in SSX).  A similar definition of the Taylor microscale in conventional fluids involves spatial derivatives of the fluctuating velocity field \cite{Frisch95}.
+
+The correlation scale can be evaluated
+
+$$\lambda_{CS}  = \frac{1}{\langle b^2 \rangle} \int_0^\infty R(r) dr$$ which is of the order of the system size (eg. the radius of the SSX wind tunnel).
+
+An equivalent formulation of the Taylor scale in terms of the spectrum is
+
+$$\frac{1}{\lambda_T^2}  = \int_0^\infty dk k^2 E(k)/\int_0^\infty dk E(k)$$
+
+The correlation function can be approximated
+
+$$R(r) \approx  \langle b^2 \rangle \left(1 - \frac{r^2}{2 \lambda_T^2}  \right) $$  We will fit our measured 16-point correlation function R(r) to this form in order to extract the Taylor microscale $\lambda_T$. 
+
+An effective turbulent magnetic Reynold's number can be written \cite{Batchelor70}
+
+$$R_m^{eff}  = \left(\frac{\lambda_{CS}}{\lambda_T} \right)^2$$
+
+Note that the formal definition of the magnetic Reynolds number involves the plasma (Spitzer) conductivity
+
+$$R_m = \mu_0 V \sigma_{SP} L.$$ Using $T_e = 10~eV$ for the SSX wind tunnel and the radius of the tunnel for the outer scale ($L = R = 0.078~m$), we calculate $R_m = 300$ for a flow speed of 50 km/s.
+
+The Fourier transform of the correlation function is the spatial energy spectrum, $E(k)$:
+
+$$E(k) = \frac{1}{2 \pi} \int_0^L e^{ikr} R(r) dr $$
+
+We can compare a measurement of the energy spectrum $E(k)$ to the Fourier transform of the measured correlation function R(r),
+
+\bigskip {\bf SSX MHD wind tunnel:} First magnetic correlation function analysis in a turbulent laboratory plasma with no equilibrium or background magnetic field.  The plasma is nonetheless fully magnetized since $\rho_i \ll R$.
+
+We have recently reported on the observation of a long-lived helical flux rope called a Taylor double-helix in the SSX MHD wind tunnel \cite{Gray13}.  The Taylor double-helix is the natural relaxed state of MHD plasma confined in a long, perfectly conducting cylinder \cite{Taylor86}.  In the case of an infinite cylinder, the minimum energy state has a helical pitch of $ ka = 1.234$, where k is the wave number associated with the z axis.  
+
+In the SSX experiments, a magnetized plasma gun launches a magnetized plasma plume into a long flux conserving cylinder.  The plasma rapidly relaxes to the double-helix state in about 1 Alfv\'en crossing time and subsequently decays resistively.  In the paper, we postulated that the physics of selective decay was at play as the initially turbulent plasma relaxed to the double-helix state.  The selective decay hypothesis posits that the energy selectively decays relative to the magnetic helicity because the energy spectra peaks at higher wave numbers, where dissipation is higher \cite{Matthaeus80}.  The wind tunnel's minimum energy state possesses $ka = 1.292$, which is within 5\% of the infinite cylinder's $ka = 1.234$. 
+
+More on the experimental set up (similar to PPCF paper).
+ 
+ \bigskip {\bf Results:} 
+ 
+ Figures: 1. SSX schematic/Taylor state.  2. Time series, mean values of B (maybe at several radii to illustrate good correlation for nearby probes). Highlight epochs of interest. 3. Correlation function data (15 intervals, scatter plot, with 15 data points for unit interval, etc).  4. Fluctuation spectrum $E_B(k)$, compare with the Fourier transform R(r) in figure 3.  4. Fit figure showing Taylor scale using 3-15 data points. 5. Comparison with R(r) determined with HiFi.
+ 
+ Need to calculate the outer scale (using either R or the integral formula).  Need to calculate Rm from $\lambda_{CS}/\lambda_T$.  
+  
+\begin{thebibliography}{99}
+
+\bibitem{Belmabrouk98}
+Belmabrouk, H., and M. Michard (1998), Taylor length scale measurement
+by laser Doppler velocimetry, Exp. Fluids, 25, 69Ð76.
+
+\bibitem{Matthaeus05}
+Matthaeus, W. H. and Dasso, S. and Weygand, J. M. and Milano, L. J. and Smith, C. W. and Kivelson, M. G., Phys. Rev. Lett. 95, 231101 (2005) Spatial Correlation of Solar-Wind Turbulence from Two-Point Measurements
+
+\bibitem{Weygand07}
+Weygand, J. M., Matthaeus, W. H., Dasso, S., Kivelson, M. G.,
+and Walker, R. J. (2007), J. Geophys. Res., 112, A10201.
+
+\bibitem{Weygand09}
+Weygand, J. M., Matthaeus, W. H., Dasso, S., Kivelson, M. G.,
+Kristler, L. M., and Mouikis, C. (2009), J. Geophys. Res., 114,
+A07213.
+
+\bibitem{Weygand10}
+Weygand, J. M., Matthaeus, W. H., El-Alaoui, M., Dasso, S., and
+Kivelson, M. G. (2010), J. Geophys. Res., textit115, A12250.
+
+\bibitem{Weygand11}
+Weygand, J. M., Matthaeus, W. H., Dasso, S., and Kivelson, M.
+G. (2011), J. Geophys. Res., 116, A08120.
+
+\bibitem{Matthaeus08}
+Matthaeus W. H., Weygand, J. M., Chuychai, P., Dasso, S.,
+Smith, C. W., and Kivelson, M. (2008), Astrophys. J., 678,
+L141.
+
+\bibitem{Batchelor70}
+Batchelor, G. K. (1970), Theory of Homogeneous Turbulence, Cambridge
+Univ. Press, Cambridge, England.
+
+\bibitem{Frisch95}
+Frisch, U., 1995, Turbulence: The Legacy of A.N. Kolmogorov, Cambridge University Press, Cambridge;
+New York.
+
+\bibitem{Gray13} 
+T. Gray, M. R. Brown, and D. Dandurand, Observation of a Relaxed Plasma State in a Quasi-Infinite Cylinder, Phys. Rev. Letters 110, 085002 (2013). 
+
+\bibitem{Taylor86} J. B. Taylor, Rev. Mod. Phys. 58, 741 (1986).
+
+\bibitem{Matthaeus80} W.H. Matthaeus and D. Montgomery, Ann. N.Y. Acad. Sci. 357, 203 (1980).
+
+\bibitem{Servidio08}
+Servidio, S., Matthaeus, W. H., and Dmitruk, P.: Depression of Nonlinearity in Decaying Isotropic MHD Turbulence, Phys. Rev. Lett., 100, 095005, doi:10.1103 Phys. Rev. Lett.100.095005, 2008.
+
+\bibitem{Servidio11}
+Servidio, S., Dmitruk, P., Greco, A., Wan, M., Donato, S., Cassak, P. A., Shay, M. A., Carbone, V., Matthaeus, W. H., Magnetic reconnection as an element of turbulence, Nonlinear Processes in Geophysics, Vol. 18, p. 675-695, 2011. 
+
+\bibitem{Servidio09}
+Servidio, S., Matthaeus, W. H., Shay, M. A., Cassak, P. A., and Dmitruk, P.: Magnetic Reconnection in Two-Dimensional Magnetohydrodynamic Turbulence, Phys. Rev. Lett., 102, 115003, doi:10.1103/PhysRevLett.102.115003, 2009.
+
+\bibitem{Servidio10a}
+Servidio, S., Matthaeus, W. H., Shay, M. A., Dmitruk, P., Cassak, P. A., and Wan, M.: Statistics of magnetic reconnection in two- dimensional magnetohydrodynamic turbulence, Phys. Plasmas, 17, 032315, doi:10.1063/1.3368798, 2010a.
+
+\bibitem{Servidio10b}
+Servidio, S., Wan, M., Matthaeus, W. H., and Carbone, V.: Local relaxation and maximum entropy in two-dimensional turbulence: Phys. Fluids, 22, 125107, doi:10.1063/1.3526760, 2010b.
+
+\bibitem{Servidio11b}
+Servidio, S., Greco, A., Matthaeus, W. H., Osman, K. T., and Dmitruk, P.: Statistical association of discontinuities and reconnection in magnetohydrodynamic turbulence, J. Geophys. Res., 116, A09102, 1Ð11, doi:10.1029/2011JA016569, 2011.
+
+\bibitem{Greco08}
+Greco, A., Chuychai, P., Matthaeus, W. H., Servidio, S., and Dmitruk, P.: Intermittent MHD structures and classical discontinuities, Geophys. Res. Lett., 35, L19111, doi:10.1029/2008GL035454, 2008.
+
+\bibitem{Greco09}
+Greco, A., Matthaeus, W. H., Servidio, S., Chuychai, P., and Dmitruk, P.: Statistical Analysis of Discontinuities in Solar Wind ACE Data and Comparison with Intermittent MHD Turbulence, Astrophys. J., 691, L111, doi:10.1088/0004-637X/691/2/L111, 2009.
+
+\bibitem{Wan09}
+Wan, M., Oughton, S., Servidio, S., and Matthaeus, W. H.: Generation of non-Gaussian statistics and coherent structures in ideal magnetohydrodynamics, Phys. Plasmas, 16, 080703, doi:10.1063/1.3206949, 2009.
+
+\bibitem{Wan12}
+Wan, M., W. H. Matthaeus, H. Karimabadi, V. Roytershteyn, M. Shay, P. Wu, W. Daughton, B. Loring, and S. C. Chapman, Intermittent Dissipation at Kinetic Scales in Collisionless Plasma Turbulence, Physical Review Letters, Vol. 109, 195001, 2012. 
+
+\bibitem{Osman11}
+Osman, K. T., Matthaeus, W. H., Greco, A., and Servidio, S.: Evidence for Inhomogeneous Heating in the Solar Wind, Astrophys. J., 727, L11, doi:10.1088/2041-8205/727/1/L11, 2011.
+
+\bibitem{Osman12}
+Osman, K. T., Matthaeus, W. H., Wan, M., and Rappazzo, A. F., Intermittency and Local Heating in the Solar Wind, 2012b, Physical Review Letters, 108, 261102
+
+
+
+\end{thebibliography}
+
+\end{document}
