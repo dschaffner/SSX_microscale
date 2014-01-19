@@ -106,7 +106,7 @@ Correlation analysis is used to determine the Taylor microscale and magnetic Rey
 
 \section{Introduction}
 
-A useful measure of fully developed turbulence is the spatial correlation function.  For a magnetohydrodynamic (MHD) plasma, the magnetic correlation function can be written
+A useful measure of fully developed turbulence is the spatial correlation function.  For a magnetohydrodynamic (MHD) plasma, the radial correlation function of the magnetic field can be written
 %
 \begin{equation}
 R(r) =  \langle {\bf b(x) \cdot b(x + r)} \rangle
@@ -115,7 +115,7 @@ R(r) =  \langle {\bf b(x) \cdot b(x + r)} \rangle
 %
 where {\bf b} is the fluctuating part of a turbulent magnetic field (${\bf B}(x, t) = {\bf B_0 + b}$).  For well-behaved turbulence, the magnetic fluctuations at two points should become uncorrelated at large spatial separation and the correlation function should vanish ($R \rightarrow 0$ as $r \rightarrow \infty$).  
 
-Two point velocity correlation functions have been measured in conventional fluids for decades (see, for example \cite{Belmabrouk98}) but two point magnetic correlations in plasmas are less common.  The first proper two-point single time measurements of the magnetic correlation function in the solar wind plasma were performed by Matthaeus, et al \cite{Matthaeus05}.  They used simultaneous magnetic field data from several spacecraft, including the four Cluster spacecraft flying in tetrahedral formation.  Simultaneous measurements were performed with separations as small as 150 km (using pairs of Cluster satellites) to as large as $350~R_E$ ($2.2 \times 10^6~km$).  From measurements of the outer correlation scale, and the Taylor microscale (discussed below), they report an effective magnetic Reynolds number of solar wind $R_m^{eff}  = 230,000$.
+Two point velocity correlation functions have been measured in conventional fluids for decades (see, for example \cite{Belmabrouk98}) but two point magnetic correlations in plasmas are less common.  The first proper two-point single time measurements of the magnetic correlation function in the solar wind plasma were performed by Matthaeus, et al \cite{Matthaeus05}.  They used simultaneous magnetic field data from several spacecraft, including the four Cluster spacecraft flying in tetrahedral formation.  Simultaneous measurements were performed with separations ranging from $150~km$ (using pairs of Cluster satellites) to $350~R_E$ ($2.2 \times 10^6~km$).  From measurements of the outer correlation scale, and the Taylor microscale (discussed below), they report an effective magnetic Reynolds number of the solar wind $R_m^{eff}  = 230,000$.
 
 In a set of follow-up papers, Weygand, et al \cite{Weygand07,Weygand09,Weygand10,Weygand11} have modified and improved the earlier result.  In particular, they describe a method using fits of Cluster separations from 100 to $10^6~km$ \cite{Weygand07}, and extrapolating the Taylor microscale down to zero separation.  We discuss this method below.  These more detailed measurements confirm the earlier work  \cite{Matthaeus05} and find a solar wind magnetic Reynolds number of $R_m^{eff}  = 260,000 \pm 20,000$.  In addition, using data in the magnetospheric plasma sheet (tailward of Earth), they find a much smaller Reynolds number $R_m^{eff}  = 111 \pm 12$ since the outer correlation scale is much smaller in the plasma sheet.  Anisotropies in the correlation function parallel and perpendicular to the local magnetic field were studied in separate papers \cite{Weygand09,Weygand10}, with longer correlation lengths measured parallel to the local field.  Variations with solar wind speed were also studied \cite{Weygand11}.
 
@@ -133,7 +133,7 @@ As noted above, the magnetic correlation function can be written
 R(r) =  \langle {\bf b(x) \cdot b(x + r)} \rangle
 \end{equation}
 %
-where {\bf b} is the fluctuating part of a turbulent magnetic field (${\bf B}(x, t) = {\bf B_0 + b}$)). 
+where {\bf b} is the fluctuating part of a turbulent magnetic field (${\bf B}(x, t) = {\bf B_0 + b}$). 
 
 The magnetic Taylor microscale can be formally defined as
 %
@@ -142,7 +142,7 @@ The magnetic Taylor microscale can be formally defined as
 \label{eq:tayscale}
 \end{equation}
 %
-This definition identifies the Taylor microscale as the scale associated with mean square spatial derivatives of the fluctuating magnetic field $b$.  It is at this scale that one would expect dissipation effects to become important, although actual dissipation likely occurs at smaller, kinetic scales ($k_D \lambda_T = R_m^{1/4}$) \cite{Matthaeus08}.  We expect that the Taylor microscale should be on the same order but larger than the Larmor scale ($\rho_i \approx 1~mm$ in the SSX wind tunnel) or the ion inertial scale ($c/\omega_{pi} \approx 5~mm$ in SSX).  A similar definition of the Taylor microscale in conventional fluids involves spatial derivatives of the fluctuating velocity field \cite{frisch95}.
+This definition identifies the Taylor microscale as the scale associated with mean square spatial derivatives of the fluctuating magnetic field $\bf{b}$. A similar definition of the Taylor microscale in conventional fluids involves spatial derivatives of the fluctuating velocity field \cite{frisch95}. It is at this scale that one would expect dissipation effects to become important, although actual dissipation likely occurs at smaller, kinetic scales ($k_D \lambda_T = R_m^{1/4}$) \cite{Matthaeus08}.  We expect that the Taylor microscale should be on the order of but larger than the Larmor scale ($\rho_i \approx 1~mm$ in the SSX wind tunnel) and/or(?) the ion inertial scale ($c/\omega_{pi} \approx 5~mm$ in SSX).
 
 The correlation scale can be evaluated
 %
@@ -166,9 +166,9 @@ R(r) \approx  \langle b^2 \rangle \left(1 - \frac{r^2}{2 \lambda_T^2}  \right)
 \label{eq:correlation2}  
 \end{equation}
 %
-We will fit our measured 16-point correlation function R(r) to this form in order to extract the Taylor microscale $\lambda_T$. 
+We will fit our measured 16-point correlation function $R(r)$ to this form in order to extract the Taylor microscale $\lambda_T$. 
 
-An effective turbulent magnetic Reynold's number can be written \cite{Batchelor70}
+An effective turbulent magnetic Reynolds number can be written \cite{Batchelor70}
 %
 \begin{equation}
 R_m^{eff}  = \left(\frac{\lambda_{CS}}{\lambda_T} \right)^2
@@ -196,7 +196,7 @@ We can compare a measurement of the energy spectrum $E(k)$ to the Fourier transf
 
 \begin{figure}[!htbp]
 \centerline{
-\includegraphics[width=8.5cm]{chamber.png}}
+\includegraphics[width=8.5cm]{chamberEdit.png}}
 \caption{\label{fig:chamber} Cross-section of SSX chamber in MHD wind-tunnel configuration}
 \end{figure}
 
